@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "pingspoof",
+  "version": "${version}",
+  "name": "Pingspoof",
+  "description": "Artificially increase your ping! /addping",
+  "authors": ["2stinkysocks"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/pingspoof/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.twostinkysocks.pingspoof.client.PingspoofClient"
+    ]
+  },
+  "mixins": [
+    "pingspoof.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.3",
+    "fabric": "*",
+    "minecraft": ">=1.20.2"
+  }
+}
